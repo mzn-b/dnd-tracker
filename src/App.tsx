@@ -26,13 +26,7 @@ type Skill = {
 };
 
 const App: React.FC = () => {
-    const [skills, setSkills] = useState<Skill[]>([
-        {
-            name: "Bardic Inspiration",
-            uses: 3,
-            resetCondition: ResetCondition.BOTH,
-        },
-    ]);
+    const [skills, setSkills] = useState<Skill[]>([]);
 
     const [importModalOpen, setImportModalOpen] = useState(false);
     const [addSkillModalOpen, setAddSkillModalOpen] = useState(false);
