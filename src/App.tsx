@@ -10,6 +10,7 @@ import {SkillTable} from "./components/SkillTable.tsx";
 import {ImportSkillModal} from "./components/ImportSkillModal.tsx";
 import {AddSkillModal} from "./components/AddSkillModal.tsx";
 import {HelpModal} from "./components/HelpModal.tsx";
+import {Footer} from "./components/Footer.tsx";
 
 const App: FC = () => {
     const [skills, setSkills] = useState<Skill[]>([]);
@@ -105,6 +106,7 @@ const App: FC = () => {
             <HelpModal open={helpModalOpen} onClose={() => {
                 setHelpModalOpen(false)
             }}/>
+            <Footer/>
         </Stack>
     );
 };
