@@ -10,6 +10,10 @@ type SkillTableProps = {
 };
 
 export const SkillTable: FC<SkillTableProps> = ({skills, handleCheckboxChange, handleRemoveSkill}) => {
+    if(skills.length === 0){
+        return null;
+    }
+
     return (
         <Table sx={{
             width: '60%',
